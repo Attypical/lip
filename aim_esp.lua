@@ -583,7 +583,7 @@ Name.BorderSizePixel = 0
 Name.Position = UDim2.new(0.0178597774, 0, 0.00456260797, 0)
 Name.Size = UDim2.new(0, 200, 0, 31)
 Name.Font = Enum.Font.GothamBold
-Name.Text = "aimbot & esp"
+Name.Text = "aimlock & esp"
 Name.TextColor3 = Color3.fromRGB(155, 200, 220)
 Name.TextSize = 19.000
 
