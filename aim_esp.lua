@@ -1,4 +1,4 @@
-i-- this is not a vulnerability dumb fucking fanta why did u check
+-- this is not a vulnerability dumb fucking fanta why did u check
 local PLAYER = game.Players.LocalPlayer
 local CurrentCam  = game.Workspace.CurrentCamera
 local UIS = game:GetService("UserInputService")
@@ -582,9 +582,9 @@ Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Name.BorderSizePixel = 0
 Name.Position = UDim2.new(0.0178597774, 0, 0.00456260797, 0)
 Name.Size = UDim2.new(0, 200, 0, 31)
-Name.Font = Enum.Font.Gotham
+Name.Font = Enum.Font.GothamBold
 Name.Text = "aimbot & esp"
-Name.TextColor3 = Color3.fromRGB(17, 223, 255)
+Name.TextColor3 = Color3.fromRGB(155, 200, 220)
 Name.TextSize = 19.000
 
 Line.Name = "Line"
@@ -689,7 +689,7 @@ Fill1.Size = UDim2.new(0, 100, 0, 15)
 
 UICorner_2.Parent = Fill1
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
 UIGradient.Parent = Fill1
 -- Made By Mick Gordon
 TriggerFov.Name = "TriggerFov"
@@ -757,7 +757,7 @@ Fill2.Size = UDim2.new(0, 0, 0, 15)
 
 UICorner_4.Parent = Fill2
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}-- Made By Mick Gordon
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}-- Made By Mick Gordon
 UIGradient_2.Parent = Fill2
 
 TriggerSmoothing.Name = "TriggerSmoothing"
@@ -804,9 +804,9 @@ TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
 TextLabel_3.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_3.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Font = Enum.Font.GothamBold
 TextLabel_3.Text = "aim part"
-TextLabel_3.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_3.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_3.TextSize = 21.000
 
 Allways_Show.Name = "Allways_Show"
@@ -827,9 +827,9 @@ TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.00569662312, 0, 0.100655407, 0)
 TextLabel_4.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Font = Enum.Font.GothamBold
 TextLabel_4.Text = "aimlock"
-TextLabel_4.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_4.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_4.TextSize = 18.000
 TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -909,9 +909,9 @@ TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_5.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Font = Enum.Font.GothamBold
 TextLabel_5.Text = "health type"
-TextLabel_5.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_5.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_5.TextSize = 21.000
 -- Made By Mick Gordon
 BBHT.Name = "BBHT"
@@ -932,9 +932,9 @@ TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_6.BorderSizePixel = 0-- Made By Mick Gordon
 TextLabel_6.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_6.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Font = Enum.Font.GothamBold
 TextLabel_6.Text = "box color"
-TextLabel_6.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_6.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_6.TextSize = 21.000
 
 TextLabel_7.Parent = ESPSection
@@ -944,9 +944,9 @@ TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_7.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_7.Font = Enum.Font.Gotham
+TextLabel_7.Font = Enum.Font.GothamBold
 TextLabel_7.Text = "RGB"
-TextLabel_7.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_7.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_7.TextSize = 21.000
 
 Frame_3.Parent = ESPSection
@@ -1006,9 +1006,9 @@ TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_8.BorderSizePixel = 0
 TextLabel_8.Position = UDim2.new(0.215919182, 0, 0.100655407, 0)
 TextLabel_8.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_8.Font = Enum.Font.Gotham
+TextLabel_8.Font = Enum.Font.GothamBold
 TextLabel_8.Text = "esp"
-TextLabel_8.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_8.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_8.TextSize = 18.000
 TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1076,7 +1076,7 @@ Fill3.Size = UDim2.new(0, 100, 0, 15)
 -- Made By Mick Gordon
 UICorner_6.Parent = Fill3
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
 UIGradient_3.Parent = Fill3
 
 TriggerOutTans.Name = "TriggerOutTans"
@@ -1144,7 +1144,7 @@ Fill4.Size = UDim2.new(0, 100, 0, 15)
 -- Made By Mick Gordon
 UICorner_8.Parent = Fill4
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(17, 223, 255)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
 UIGradient_4.Parent = Fill4
 
 TriggerFill.Name = "TriggerFill"
@@ -1180,7 +1180,7 @@ TextLabel_10.BorderSizePixel = 0
 TextLabel_10.Position = UDim2.new(0.104347825, 0, 0, 0)
 TextLabel_10.Size = UDim2.new(0, 133, 0, 23)
 TextLabel_10.Font = Enum.Font.Gotham
-TextLabel_10.Text = "fill outlines transparency"
+TextLabel_10.Text = "Fill Outlines Transparency"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextSize = 14.000
 -- Made By Mick Gordon
@@ -1191,9 +1191,9 @@ TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_11.BorderSizePixel = 0
 TextLabel_11.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_11.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_11.Font = Enum.Font.Gotham
+TextLabel_11.Font = Enum.Font.GothamBold
 TextLabel_11.Text = "outlines"
-TextLabel_11.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_11.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_11.TextSize = 21.000
 
 Frame_6.Parent = ESPSection_2
@@ -1253,9 +1253,9 @@ TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_12.BorderSizePixel = 0
 TextLabel_12.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_12.Size = UDim2.new(0, 100, 0, 17)
-TextLabel_12.Font = Enum.Font.Gotham
+TextLabel_12.Font = Enum.Font.GothamBold
 TextLabel_12.Text = "fill outlines"
-TextLabel_12.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_12.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_12.TextSize = 21.000
 
 Frame_7.Parent = ESPSection_2
@@ -1428,7 +1428,7 @@ TextLabel_13.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_13.Size = UDim2.new(0, 100, 0, 17)
 TextLabel_13.Font = Enum.Font.Gotham
 TextLabel_13.Text = ""
-TextLabel_13.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_13.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_13.TextSize = 21.000
 
 TextLabel_14.Parent = Unknown
@@ -1440,7 +1440,7 @@ TextLabel_14.Position = UDim2.new(0.215919182, 0, 0.100655407, 0)
 TextLabel_14.Size = UDim2.new(0, 100, 0, 17)
 TextLabel_14.Font = Enum.Font.Gotham
 TextLabel_14.Text = ""
-TextLabel_14.TextColor3 = Color3.fromRGB(17, 223, 255)
+TextLabel_14.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_14.TextSize = 18.000
 
 Open.Name = "Open"
