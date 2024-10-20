@@ -59,7 +59,7 @@ Window:Button({
 end
 
 _G.orcaexec = true
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua", true))()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Attypical/orca/master/public/latest.lua"))()
         Library:Notification({
             Text = "loaded successfully",
             Duration = 5
