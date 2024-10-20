@@ -7,8 +7,8 @@ local mouseLocation = UIS.GetMouseLocation
 
 local DeleteMob ={
     GUi = {
-        OpenNCloseButton = true; 
-        KeybindEnable = false;
+        OpenNCloseButton = false; 
+        KeybindEnable = true;
         Keybind = "z"; 
     };
 	Aimbot= {
@@ -569,7 +569,7 @@ TextBox.Position = UDim2.new(0.791149139, 0, 0.0127403988, 0)
 TextBox.Size = UDim2.new(0, 200, 0, 23)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.Roboto
-TextBox.Text = ""
+TextBox.Text = "keybind - z"
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
 
