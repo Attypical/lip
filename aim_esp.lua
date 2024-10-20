@@ -7,14 +7,14 @@ local mouseLocation = UIS.GetMouseLocation
 
 local DeleteMob ={
     GUi = {
-        OpenNCloseButton = true; -- Have A Button For It
-        KeybindEnable = false; -- If You Want A Bind For The Menu
-        Keybind = "z"; -- Menu Key Bind
+        OpenNCloseButton = true; 
+        KeybindEnable = false;
+        Keybind = "z"; 
     };
 	Aimbot= {
-        Keybind = "MouseButton2"; -- Change Aim Bot Key Bind Here !!! No Capitals, Unless it is MouseButton1 or MouseButton2
+        Keybind = "MouseButton2"; 
 ------------------------------------------------------------------------------------------
-		Enabled = false; -- No Need To Change Anything Here As It Is On The GUI
+		Enabled = false; 
 		TeamCheck = false;
 		WallCheck = false;
 		ShowFov = false;
@@ -61,19 +61,19 @@ local DeleteMob ={
 
 			Color = Color3.fromRGB(255,100,0);
 		}
-	}-- Made By Mick Gordon
+	}
 }
 
--- Made By Mick Gordon
+
 local Fov = Instance.new("ScreenGui")Fov.Name = "Fov" Fov.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") Fov.ZIndexBehavior = Enum.ZIndexBehavior.Sibling Fov.ResetOnSpawn = false-- i miss you synapse fov
 local TracersG = Instance.new("ScreenGui")TracersG.Name = "Tracers" TracersG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") TracersG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling TracersG.ResetOnSpawn = false
 local FOVFFrame = Instance.new("Frame")FOVFFrame.Parent = Fov FOVFFrame.Name = "FOVFFrame" FOVFFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255) FOVFFrame.BorderColor3 = Color3.fromRGB(0, 0, 0) FOVFFrame.BorderSizePixel = 0 FOVFFrame.BackgroundTransparency = 1 FOVFFrame.AnchorPoint = Vector2.new(0.5, 0.5) FOVFFrame.Position = UDim2.new(0.5, 0,0.5, 0) FOVFFrame.Size = UDim2.new(0, DeleteMob.Aimbot.Fov, 0, DeleteMob.Aimbot.Fov) FOVFFrame.BackgroundTransparency = 1 
-local UICorner = Instance.new("UICorner")UICorner.CornerRadius = UDim.new(1, 0) UICorner.Parent = FOVFFrame -- Made By Mick Gordon
+local UICorner = Instance.new("UICorner")UICorner.CornerRadius = UDim.new(1, 0) UICorner.Parent = FOVFFrame 
 local UIStroke = Instance.new("UIStroke")UIStroke.Color = Color3.fromRGB(100,0,100) UIStroke.Parent = FOVFFrame UIStroke.Thickness = 1 UIStroke.ApplyStrokeMode = "Border"
 local BoxC = Instance.new("ScreenGui", game.Workspace) BoxC.Name = "Box"
 local Higlight = Instance.new("ScreenGui",game.Workspace)
 local connections = {}
--- Made By Mick Gordon
+
 local function AddHighlight(plr)
 	local Highlight = Instance.new("Highlight")
 	Highlight.Parent = Higlight
@@ -96,7 +96,7 @@ local function AddHighlight(plr)
 					else
 						Highlight.Enabled = true
 					end
-				else-- Made By Mick Gordon
+				else
 					Highlight.Enabled = false
 				end
 
@@ -110,7 +110,7 @@ local function AddHighlight(plr)
 					Highlight.DepthMode = "AlwaysOnTop" 
 				else
 					Highlight.DepthMode = "Occluded" 
-				end-- Made By Mick Gordon
+				end
 
 				Highlight.OutlineTransparency = DeleteMob.ESP.OutLines.OutlineTrancparency
 				Highlight.OutlineColor = DeleteMob.ESP.OutLines.OutlineColor
@@ -127,7 +127,7 @@ local function AddHighlight(plr)
 	end)
 	coroutine.resume(co)
 end
--- Made By Mick Gordon
+
 local function AddBox(player) -- Saves FPS 
 	local bbg = Instance.new("BillboardGui", BoxC)
 	bbg.Name = player.Name
@@ -147,7 +147,7 @@ local function AddBox(player) -- Saves FPS
 	right.Parent = outlines
 	right.Size = UDim2.new(0,-(1),1,0)   
 	right.Position = UDim2.new(1,0,0,0)
-	local up = left:Clone()-- Made By Mick Gordon
+	local up = left:Clone()
 	up.Parent = outlines
 	up.Size = UDim2.new(1,0,0,(1))
 	local down = left:Clone()
@@ -172,7 +172,7 @@ local function AddBox(player) -- Saves FPS
 	namelabel.Text = player.Name
 	local distancel = Instance.new("TextLabel", info)
 	distancel.Name = "distancelabel"
-	distancel.BackgroundTransparency = 1-- Made By Mick Gordon
+	distancel.BackgroundTransparency = 1
 	distancel.TextStrokeTransparency = 0
 	distancel.TextXAlignment = Enum.TextXAlignment.Left
 	distancel.Size = UDim2.new(0,100,0,18)
@@ -208,7 +208,7 @@ local function AddBox(player) -- Saves FPS
 	bar.Position = UDim2.new(0,0,1,0)
 	bar.Size = UDim2.new(1,0,1,0)
 
-	-- Made By Mick Gordon
+	
 	local co = coroutine.create(function()
 		while wait(0.1) do
 			if player ~= PLAYER and player and player.Character and player.Character.FindFirstChild(player.Character, "Humanoid") and player.Character.Humanoid.Health > 0 then
@@ -232,7 +232,7 @@ local function AddBox(player) -- Saves FPS
 					if DeleteMob.ESP.Box.HealthType == "Text" then
 						healthbar.Visible = false
 						healthl.Visible = true
-					end-- Made By Mick Gordon
+					end
 					if DeleteMob.ESP.Box.HealthType == "Bar" then
 						healthl.Visible = false
 						healthbar.Visible = true
@@ -253,7 +253,7 @@ local function AddBox(player) -- Saves FPS
 					namelabel.Visible = false
 				end
 
-				-- Made By Mick Gordon
+				
 				if DeleteMob.ESP.Box.Distance == true then
 					distancel.Visible = true
 					if PLAYER.Character and PLAYER.Character:FindFirstChild("HumanoidRootPart") ~= nil then
@@ -273,7 +273,7 @@ local function AddBox(player) -- Saves FPS
 					info.Enabled = true
 					forhealth.Enabled = true
 				end
-				-- Made By Mick Gordon
+				
 
 				if DeleteMob.ESP.Box.TeamColor == true then
 					left.BackgroundColor3 = player.TeamColor.Color
@@ -295,7 +295,7 @@ local function AddBox(player) -- Saves FPS
 				if not (game:GetService"Players":FindFirstChild(player.Name)) then
 					BoxC:FindFirstChild(player.Name):Destroy()
 					coroutine.yield()
-				end-- Made By Mick Gordon
+				end
 			else
 				bbg.Enabled = false
 				bbg.Adornee = nil
@@ -324,7 +324,7 @@ local function AddTracers(Player) -- Tracers Without Lib OMG !!!!
 				local TargetPart = Player.Character:FindFirstChild("HumanoidRootPart")
 				local ScreenPoint, OnScreen = CurrentCam:WorldToScreenPoint(TargetPart.Position)
 				local distance 
-				-- Made By Mick Gordon
+				
 				distance = math.floor(0.5+(game.Workspace.CurrentCamera.CFrame.Position - Player.Character:WaitForChild("HumanoidRootPart").Position).magnitude)
 
 				local screenpointmain = Vector2.new(ScreenPoint.X, ScreenPoint.Y + (2500 / distance)) --  / distance so it can be at the bottom of the box.
@@ -349,12 +349,12 @@ local function AddTracers(Player) -- Tracers Without Lib OMG !!!!
 							else
 								tracer.Visible = true
 							end
-						else -- Made By Mick Gordon
+						else 
 							tracer.Visible = true
 						end
 					else
 						tracer.Visible = false
-					end-- Made By Mick Gordon
+					end
 
 					if DeleteMob.ESP.Tracers.TeamColor == true then
 						tracer.BackgroundColor3 = Player.TeamColor.Color
@@ -378,7 +378,7 @@ local function AddTracers(Player) -- Tracers Without Lib OMG !!!!
 			end
 		end)
 	end)
-	coroutine.resume(co)-- Made By Mick Gordon
+	coroutine.resume(co)
 end
 
 function isVisible(p, ...)
@@ -388,7 +388,7 @@ function isVisible(p, ...)
 	end
 	
 	return #CurrentCam:GetPartsObscuringTarget({ p }, { CurrentCam, PLAYER.Character, ... }) == 0 
-end-- Made By Mick Gordon
+end
 
 function CameraGetClosestToMouse(Fov)
 	local AimFov = Fov
@@ -403,9 +403,9 @@ function CameraGetClosestToMouse(Fov)
 					local new_magnitude = (screen_pos_2D - mouseLocation(UIS)).Magnitude
 					if on_screen and new_magnitude < AimFov and isVisible(v.Character[DeleteMob.Aimbot.AimPart].Position, v.Character.Head.Parent) then
 						AimFov = new_magnitude
-						targetPos = v-- Made By Mick Gordon
+						targetPos = v
 					end
-				end-- Made By Mick Gordon
+				end
 			else
 				if v.Character and v.Character:FindFirstChild(DeleteMob.Aimbot.AimPart) and v.Character.Humanoid and v.Character.Humanoid.Health > 0 then
 					local screen_pos, on_screen = WorldToViewportPoint(CurrentCam, v.Character[DeleteMob.Aimbot.AimPart].Position)
@@ -431,7 +431,7 @@ local function aimAt(pos, smooth)
 		if Distance > 100  then
 			local distChangeBig = Distance / 10
 			LookAt = CurrentCam.CFrame:PointToWorldSpace(Vector3.new(0,0,-smooth * distChangeBig)):Lerp(AimPart.Position,.01) -- No one esle do camera smoothing ? tf
-		else-- Made By Mick Gordon
+		else
 			local distChangeSmall = Distance / 10
 			LookAt = CurrentCam.CFrame:PointToWorldSpace(Vector3.new(0,0,-smooth * distChangeSmall)):Lerp(AimPart.Position,.01) -- No one esle do camera smoothing ? tf
 		end
@@ -453,7 +453,7 @@ local ABWC = Instance.new("TextButton")
 local ABTC = Instance.new("TextButton")
 local ABSF = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
-local Slider3 = Instance.new("Frame")-- Made By Mick Gordon
+local Slider3 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Fill1 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
@@ -467,7 +467,7 @@ local UICorner_3 = Instance.new("UICorner")
 local Fill2 = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
-local TriggerSmoothing = Instance.new("TextButton")-- Made By Mick Gordon
+local TriggerSmoothing = Instance.new("TextButton")
 local Numbers_2 = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
@@ -493,7 +493,7 @@ local TextLabel_8 = Instance.new("TextLabel")
 local ESPSection_2 = Instance.new("Frame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local OE = Instance.new("TextButton")
-local OTC = Instance.new("TextButton")-- Made By Mick Gordon
+local OTC = Instance.new("TextButton")
 local Frame_4 = Instance.new("Frame")
 local Slider1 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
@@ -533,7 +533,7 @@ local Frame_8 = Instance.new("Frame")
 local UIListLayout_8 = Instance.new("UIListLayout")
 local Tracers_R = Instance.new("TextBox")
 local Tracers_G = Instance.new("TextBox")
-local Tracers_B = Instance.new("TextBox")-- Made By Mick Gordon
+local Tracers_B = Instance.new("TextBox")
 local Unknown = Instance.new("Frame")
 local UIListLayout_9 = Instance.new("UIListLayout")
 local TextLabel_13 = Instance.new("TextLabel")
@@ -549,7 +549,7 @@ CheatEngineDeleteMob.Enabled = true
 CheatEngineDeleteMob.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 CheatEngineDeleteMob.DisplayOrder = 10
 CheatEngineDeleteMob.ResetOnSpawn = false
--- Made By Mick Gordon
+
 DeleteMobF.Name = "DeleteMobF"
 DeleteMobF.Parent = CheatEngineDeleteMob
 DeleteMobF.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -569,7 +569,6 @@ TextBox.Position = UDim2.new(0.791149139, 0, 0.0127403988, 0)
 TextBox.Size = UDim2.new(0, 200, 0, 23)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.Roboto
-TextBox.PlaceholderText = ""
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
@@ -602,7 +601,7 @@ Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Line_2.BorderSizePixel = 0
 Line_2.Position = UDim2.new(0.205276027, 0, 0.0828348249, 0)
 Line_2.Size = UDim2.new(0, 1, 0, 365)
--- Made By Mick Gordon
+
 AimBotSection.Name = "AimBotSection"
 AimBotSection.Parent = DeleteMobF
 AimBotSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -691,7 +690,7 @@ UICorner_2.Parent = Fill1
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
 UIGradient.Parent = Fill1
--- Made By Mick Gordon
+
 TriggerFov.Name = "TriggerFov"
 TriggerFov.Parent = Slider3
 TriggerFov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -757,7 +756,7 @@ Fill2.Size = UDim2.new(0, 0, 0, 15)
 
 UICorner_4.Parent = Fill2
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}-- Made By Mick Gordon
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
 UIGradient_2.Parent = Fill2
 
 TriggerSmoothing.Name = "TriggerSmoothing"
@@ -771,7 +770,7 @@ TriggerSmoothing.Font = Enum.Font.SourceSans
 TriggerSmoothing.Text = ""
 TriggerSmoothing.TextColor3 = Color3.fromRGB(0, 0, 0)
 TriggerSmoothing.TextSize = 14.000
--- Made By Mick Gordon
+
 Numbers_2.Name = "Numbers"
 Numbers_2.Parent = Frame_2
 Numbers_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -841,7 +840,7 @@ ESPSection.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ESPSection.BorderSizePixel = 0
 ESPSection.Position = UDim2.new(0.26986298, 0, 0.160724282, 0)
 ESPSection.Size = UDim2.new(0, 100, 0, 334)
--- Made By Mick Gordon
+
 UIListLayout_2.Parent = ESPSection
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -868,7 +867,7 @@ BBN.Font = Enum.Font.Gotham
 BBN.Text = "Name"
 BBN.TextColor3 = Color3.fromRGB(255, 255, 255)
 BBN.TextSize = 16.000
--- Made By Mick Gordon
+
 BBD.Name = "BBD"
 BBD.Parent = ESPSection
 BBD.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -913,7 +912,7 @@ TextLabel_5.Font = Enum.Font.GothamBold
 TextLabel_5.Text = "health type"
 TextLabel_5.TextColor3 = Color3.fromRGB(155, 200, 220)
 TextLabel_5.TextSize = 21.000
--- Made By Mick Gordon
+
 BBHT.Name = "BBHT"
 BBHT.Parent = ESPSection
 BBHT.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -929,7 +928,7 @@ TextLabel_6.Parent = ESPSection
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 0-- Made By Mick Gordon
+TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.0700000003, 0, 0.20869565, 0)
 TextLabel_6.Size = UDim2.new(0, 100, 0, 17)
 TextLabel_6.Font = Enum.Font.GothamBold
@@ -986,7 +985,7 @@ Box_G.PlaceholderText = "255 - 0"
 Box_G.Text = "0" 
 Box_G.TextColor3 = Color3.fromRGB(255, 255, 255)
 Box_G.TextSize = 14.000
--- Made By Mick Gordon
+
 Box_B.Name = "Box_B"
 Box_B.Parent = Frame_3
 Box_B.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -1073,7 +1072,7 @@ Fill3.BackgroundTransparency = 0.200
 Fill3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Fill3.BorderSizePixel = 0
 Fill3.Size = UDim2.new(0, 100, 0, 15)
--- Made By Mick Gordon
+
 UICorner_6.Parent = Fill3
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
@@ -1141,7 +1140,7 @@ Fill4.BackgroundTransparency = 0.200
 Fill4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Fill4.BorderSizePixel = 0
 Fill4.Size = UDim2.new(0, 100, 0, 15)
--- Made By Mick Gordon
+
 UICorner_8.Parent = Fill4
 
 UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(155, 200, 220)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(18, 218, 249)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 52, 52))}
@@ -1183,7 +1182,7 @@ TextLabel_10.Font = Enum.Font.Gotham
 TextLabel_10.Text = "Fill Outlines Transparency"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextSize = 14.000
--- Made By Mick Gordon
+
 TextLabel_11.Parent = ESPSection_2
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.BackgroundTransparency = 1.000
@@ -1245,7 +1244,7 @@ Outlines_B.PlaceholderText = "255 - 0"
 Outlines_B.Text = "255"
 Outlines_B.TextColor3 = Color3.fromRGB(255, 255, 255)
 Outlines_B.TextSize = 14.000
--- Made By Mick Gordon
+
 TextLabel_12.Parent = ESPSection_2
 TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.BackgroundTransparency = 1.000
@@ -1307,7 +1306,7 @@ FillOutlines_B.PlaceholderText = "255 - 0"
 FillOutlines_B.Text = "255"
 FillOutlines_B.TextColor3 = Color3.fromRGB(255, 255, 255)
 FillOutlines_B.TextSize = 14.000
--- Made By Mick Gordon
+
 Tracerssection.Name = "Tracers section"
 Tracerssection.Parent = DeleteMobF
 Tracerssection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1404,7 +1403,7 @@ Tracers_B.PlaceholderText = "255 - 0"
 Tracers_B.Text = "10"
 Tracers_B.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tracers_B.TextSize = 14.000
--- Made By Mick Gordon
+
 Unknown.Name = "Unknown"
 Unknown.Parent = DeleteMobF
 Unknown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1460,7 +1459,7 @@ TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Position = UDim2.new(0, 0, 0.319999933, 0)
 TextButton.Size = UDim2.new(0, 150, 0, 34)
 TextButton.Font = Enum.Font.Gotham
-TextButton.Text = "open / Close"
+TextButton.Text = "open/close"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 
@@ -1503,7 +1502,7 @@ PLAYER:GetMouse().Button2Up:Connect(function()
     end
 end)
 
--- Made By Mick Gordon
+
 ABE.MouseButton1Click:Connect(function()
 	if ABE.BackgroundColor3 == Color3.fromRGB(52, 52, 52) then
 		ABE.BackgroundColor3 = Color3.fromRGB(2, 54, 8)
