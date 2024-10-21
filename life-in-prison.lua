@@ -169,13 +169,6 @@ airdropWindow:Button({
     end
 })
 
-otherWindow:Keybind({
-    Text = "toggle",
-    Default = Enum.KeyCode.Equals,
-    Callback = function()
-        Library:Toggle()
-    end
-})
 
 otherWindow:Button({
     Text = "use old lighting",
@@ -195,3 +188,12 @@ local atm = lighting.Atmosphere
         })
     end
 })
+
+otherWindow:Keybind({
+    Text = "toggle",
+    Default = Enum.KeyCode.Equals,
+    Callback = function()
+        Library:Toggle()
+    end
+})
+
