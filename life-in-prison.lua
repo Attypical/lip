@@ -1,3 +1,5 @@
+if _G.executed then return end
+_G.executed = true
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rain-Design/Libraries/main/Revenant.lua", true))()
 local Flags = Library.Flags
 
