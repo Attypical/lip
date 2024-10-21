@@ -174,3 +174,22 @@ otherWindow:Keybind({
         Library:Toggle()
     end
 })
+
+otherWindow:Button({
+    Text = "use old lighting",
+    Callback = function()
+local lighting = game:GetService("Lighting")
+local colorcorrection = lighting.ColorCorrection
+local atm = lighting.Atmosphere
+    atm.Density = 0.3
+    atm.Offset = 0.7
+    colorcorrection.TintColor = Color3.fromRGB(255, 255, 255)
+    colorcorrection.Brightness = 0.1
+    colorcorrection.Brightness = 0.1
+    colorcorrection.Saturation = 1.1
+        Library:Notification({
+            Text = "applied successfully",
+            Duration = 5
+        })
+    end
+})
