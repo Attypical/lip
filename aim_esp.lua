@@ -1,4 +1,3 @@
--- this is not a vulnerability dumb fucking fanta why did u check
 local PLAYER = game.Players.LocalPlayer
 local CurrentCam  = game.Workspace.CurrentCamera
 local UIS = game:GetService("UserInputService")
