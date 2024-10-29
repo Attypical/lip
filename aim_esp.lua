@@ -1546,7 +1546,7 @@ end)
 Allways_Show.MouseButton1Click:Connect(function()
 	if DeleteMob.Aimbot.AimPart == "Head" then
 		Allways_Show.Text = "head, TORSO"
-		DeleteMob.Aimbot.AimPart = "HumanoidRootPart"
+		DeleteMob.Aimbot.AimPart = "Torso"
 	else
 		Allways_Show.Text = "HEAD, torso"
 		DeleteMob.Aimbot.AimPart = "Head"
